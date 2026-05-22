@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      (function () {
+        var k = "smmiri_theme";
+        var s = localStorage.getItem(k);
+        var dark =
+          s === "dark" || (s !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.documentElement.classList.add("dark");
+      })();
+    </script>
+
+    <title>Mohammad Miri, Ph.D. · Energy systems engineer</title>
+    <meta
+      name="description"
+      content="Mohammad Miri — energy systems engineer and modeller. Building HVAC, Ph.D. research, federal clean-electricity policy, utility planning products."
+    />
+    <meta name="author" content="Mohammad Miri" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://smmiri.com/" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="smmiri.com" />
+    <meta property="og:title" content="Mohammad Miri, Ph.D." />
+    <meta
+      property="og:description"
+      content="Energy systems engineer and modeller — buildings, grid modelling, clean-electricity policy, utility planning."
+    />
+    <meta property="og:url" content="https://smmiri.com/" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

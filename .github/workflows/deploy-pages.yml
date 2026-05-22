@@ -1,0 +1,66 @@
+# Build the static CV site and publish to GitHub Pages.
+# Canonical URL: https://smmiri.com/
+#
+# FIRST-TIME SETUP:
+#   Repo → Settings → Pages → Build and deployment → Source: "GitHub Actions"
+#   Repo → Settings → Pages → Custom domain: smmiri.com → Enforce HTTPS
+#   Cloudflare DNS: see docs/CUSTOM_DOMAIN.md
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install and build
+        env:
+          VITE_BASE: /
+          VITE_SITE_URL: https://smmiri.com
+        run: |
+          npm ci
+          npm run build
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

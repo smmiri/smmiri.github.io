@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  --color-surface: #f8fafc;
+  --color-surface-card: #ffffff;
+  --color-heading: #0f172a;
+  --color-body: #334155;
+  --color-muted: #64748b;
+  --color-label: #475569;
+  --color-accent: #2563eb;
+  --color-border: #e2e8f0;
+}
+
+@layer theme {
+  .dark {
+    --color-surface: #0f172a;
+    --color-surface-card: #1e293b;
+    --color-heading: #f1f5f9;
+    --color-body: #cbd5e1;
+    --color-muted: #94a3b8;
+    --color-label: #cbd5e1;
+    --color-accent: #60a5fa;
+    --color-border: #334155;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "cv02", "cv03", "cv11";
+  background-color: var(--color-surface);
+  color: var(--color-body);
+}
+
+.text-heading {
+  color: var(--color-heading);
+}
+
+.text-body {
+  color: var(--color-body);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-label {
+  color: var(--color-label);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-surface-card {
+  background-color: var(--color-surface-card);
+}
+
+.border-default {
+  border-color: var(--color-border);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

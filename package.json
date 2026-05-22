@@ -1,0 +1,29 @@
+{
+  "name": "smmiri-com",
+  "version": "0.1.0",
+  "description": "Personal CV site for Mohammad Miri — smmiri.com",
+  "license": "MIT",
+  "author": "Mohammad Miri",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smmiri/smmiri.github.io.git"
+  },
+  "homepage": "https://smmiri.com/",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.8",
+    "@vitejs/plugin-react": "^4.5.2",
+    "tailwindcss": "^4.1.8",
+    "vite": "^6.3.5"
+  }
+}
