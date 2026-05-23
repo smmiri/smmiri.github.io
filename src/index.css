@@ -80,3 +80,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.playground-tab {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}

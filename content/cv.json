@@ -110,9 +110,9 @@
       "description": "Full profile"
     }
   ],
-  "tools": [
+  "playground": [
     {
-      "label": "Rent vs buy calculator",
+      "label": "Rent vs buy",
       "description": "Canadian mortgage vs invest sensitivity tool",
       "url": "https://rentorbuy.smmiri.com/"
     }
