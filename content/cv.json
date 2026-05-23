@@ -9,6 +9,10 @@
     {
       "title": "Senior Specialist",
       "org": "Deloitte ElectrifiedGrid, Vancouver, BC",
+      "orgLink": {
+        "label": "ElectrifiedGrid",
+        "url": "https://www.electrifiedgrid.com/"
+      },
       "dates": "Sep 2025 – present",
       "bullets": [
         "Led methodology development and prototyping for behind-the-meter battery energy storage (BESS) modelling, including technology adoption forecasting and residential/small-commercial load and generation profiles (e.g. BASS diffusion for uptake).",

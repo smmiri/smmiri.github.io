@@ -12,7 +12,7 @@ Energy systems engineer and modeller based in Vancouver, BC. Background spans co
 
 ## Experience
 
-### Senior Specialist — Deloitte ElectrifiedGrid, Vancouver, BC
+### Senior Specialist — Deloitte [ElectrifiedGrid](https://www.electrifiedgrid.com/), Vancouver, BC
 
 **Sep 2025 – present**
 
