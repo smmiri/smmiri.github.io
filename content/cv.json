@@ -109,5 +109,12 @@
       "url": "https://github.com/smmiri",
       "description": "Full profile"
     }
+  ],
+  "tools": [
+    {
+      "label": "Rent vs buy calculator",
+      "description": "Canadian mortgage vs invest sensitivity tool",
+      "url": "https://rentorbuy.smmiri.com/"
+    }
   ]
 }
