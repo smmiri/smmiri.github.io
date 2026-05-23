@@ -46,6 +46,18 @@ jobs:
           npm ci
           npm run build
 
+      - name: Verify build output
+        run: |
+          test -f dist/index.html
+          test -d dist/assets
+          test -f dist/.nojekyll
+          JS_COUNT=$(find dist/assets -name '*.js' | wc -l | tr -d ' ')
+          CSS_COUNT=$(find dist/assets -name '*.css' | wc -l | tr -d ' ')
+          echo "Built ${JS_COUNT} JS and ${CSS_COUNT} CSS assets"
+          test "$JS_COUNT" -ge 1
+          test "$CSS_COUNT" -ge 1
+          ls -la dist dist/assets | head -30
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
