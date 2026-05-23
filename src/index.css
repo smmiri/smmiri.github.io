@@ -82,6 +82,6 @@ a:hover {
 }
 
 .playground-tab {
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
   text-orientation: mixed;
 }

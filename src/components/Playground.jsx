@@ -32,7 +32,7 @@ export default function Playground({ items }) {
           onClick={() => setOpen(true)}
           aria-expanded={false}
           aria-controls={panelId}
-          className="playground-tab fixed top-1/2 right-0 z-30 -translate-y-1/2 rounded-l-md border border-r-0 border-default bg-surface-card px-2 py-3 text-xs font-medium tracking-wide text-label shadow-sm transition-colors hover:text-heading"
+          className="playground-tab fixed top-1/2 left-0 z-30 -translate-y-1/2 rounded-r-md border border-l-0 border-default bg-surface-card px-2 py-3 text-xs font-medium tracking-wide text-label shadow-sm transition-colors hover:text-heading"
         >
           Playground
         </button>
@@ -53,8 +53,8 @@ export default function Playground({ items }) {
         aria-label="Playground"
         aria-hidden={!open}
         inert={!open ? true : undefined}
-        className={`fixed top-0 right-0 z-50 flex h-full w-72 max-w-[85vw] flex-col border-l border-default bg-surface-card shadow-xl transition-transform duration-300 ease-out motion-reduce:transition-none ${
-          open ? "translate-x-0" : "pointer-events-none translate-x-full"
+        className={`fixed top-0 left-0 z-50 flex h-full w-72 max-w-[85vw] flex-col border-r border-default bg-surface-card shadow-xl transition-transform duration-300 ease-out motion-reduce:transition-none ${
+          open ? "translate-x-0" : "pointer-events-none -translate-x-full"
         }`}
       >
         <div className="flex items-center justify-between border-b border-default px-5 py-4">
