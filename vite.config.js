@@ -1,6 +1,7 @@
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
+import { viteSingleFile } from "vite-plugin-singlefile";
 
 const PLACEHOLDER_HOST = "https://smmiri.com";
 
@@ -24,8 +25,14 @@ function siteUrlSubstitution(siteUrl) {
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
+  const isProd = mode === "production";
   return {
     base: env.VITE_BASE || "/",
-    plugins: [react(), tailwindcss(), siteUrlSubstitution(env.VITE_SITE_URL)].filter(Boolean),
+    plugins: [
+      react(),
+      tailwindcss(),
+      isProd && viteSingleFile(),
+      siteUrlSubstitution(env.VITE_SITE_URL),
+    ].filter(Boolean),
   };
 });
