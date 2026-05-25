@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <style>
+      .title { font: 700 56px Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 28px Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; fill: #475569; }
+      .line { font: 500 22px Inter, system-ui, sans-serif; fill: #334155; }
+      .footer { font: 500 18px Inter, system-ui, sans-serif; fill: #64748b; }
+      .badge { font: 600 18px Inter, system-ui, sans-serif; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="#f8fafc"/>
+
+  <g transform="translate(80, 80)">
+    <rect x="0" y="36" width="36" height="48" rx="6" fill="#2563eb"/>
+    <rect x="44" y="12" width="36" height="72" rx="6" fill="#059669"/>
+  </g>
+
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="150" height="34" rx="17" fill="#0f172a"/>
+    <text class="badge" x="22" y="22">Ph.D. - CV</text>
+  </g>
+
+  <text class="title" x="80" y="240">Mohammad Miri</text>
+  <text class="subtitle" x="80" y="295">Energy systems engineer and modeller</text>
+  <text class="subtitle" x="80" y="333">Vancouver, BC - grid modelling - utility planning</text>
+
+  <g transform="translate(80, 400)">
+    <rect x="0" y="0" width="1040" height="140" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+    <text class="line" x="32" y="44">Building HVAC - clean-electricity policy - SEM / BESS</text>
+    <text class="line" x="32" y="84">Publications in Energy and Renewable Energy Reviews</text>
+    <text class="line" x="32" y="124">Open work: etl-visuals - ml-practice</text>
+  </g>
+
+  <text class="footer" x="80" y="600">smmiri.com</text>
+</svg>
