@@ -50,6 +50,8 @@ jobs:
         run: |
           test -f dist/index.html
           test -f dist/.nojekyll
+          test -f dist/sitemap.xml
+          test -f dist/robots.txt
           # Single-file build: JS/CSS inlined in index.html (no separate /assets/ to 404)
           HTML_BYTES=$(wc -c < dist/index.html | tr -d ' ')
           echo "index.html size: ${HTML_BYTES} bytes"

@@ -40,6 +40,12 @@ Expect four GitHub Pages A records on the apex, `www` CNAME to `smmiri.github.io
 
 Smoke test in a browser: hard refresh, toggle light/dark, open ElectrifiedGrid link, check publication DOI links.
 
+## Google Search Console
+
+- **Sitemap (apex):** `https://smmiri.com/sitemap.xml` — lists the CV (`smmiri.com`) and calculator (`rentorbuy.smmiri.com`). `robots.txt` on the apex points crawlers to this file.
+- **Property type:** use a **Domain** property for `smmiri.com` if you want one Search Console setup for the apex and subdomains. Submit the apex sitemap there after deploy.
+- **rentorbuy** also ships its own `https://rentorbuy.smmiri.com/sitemap.xml` (optional second submit on a URL-prefix property, or rely on the apex sitemap only).
+
 ## Build (this repo)
 
 Deploy workflow sets:
