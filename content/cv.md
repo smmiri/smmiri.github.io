@@ -8,7 +8,7 @@ github: https://github.com/smmiri
 
 ## Summary
 
-Energy systems engineer and modeller based in Vancouver, BC. Background spans commercial building HVAC and simulation, Ph.D. research on transitioning towards high-renewable power systems, bulk power system modelling for clean-electricity policy, and current work on utility planning products. I build and explain quantitative models: from building load profiles through optimization and stakeholder-facing analytics.
+Energy systems engineer and modeller based in Vancouver, BC, focused on power-system planning and optimization. Background spans utility planning products for distributed resources and non-wires alternatives, national bulk-system modelling for clean-electricity policy, and Ph.D. research on flexibility in high-renewable power systems, with earlier experience in building energy simulation, HVAC and plumbing design. I build and explain quantitative models—from optimization and scenario analysis through stakeholder-facing analytics.
 
 ## Experience
 
