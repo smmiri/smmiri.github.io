@@ -19,10 +19,12 @@ Energy systems engineer and modeller based in Vancouver, BC, focused on power-sy
 - Led methodology development and prototyping for behind-the-meter battery energy storage (BESS) modelling, including technology adoption forecasting and residential/small-commercial load and generation profiles (e.g. BASS diffusion for uptake).
 - Drove enhancement of the Solution Evaluation Module (SEM) for non-wires alternatives: energy efficiency, demand response, BTM BESS, hybrid heat pumps, residential solar PV, rates, and flexibility-market contracts; contributed across Solution Designer and Solution Planner workflows as methodology SME, including UI/UX design direction.
 - Developed and QA'd flexibility-market contract methodology as a new SEM solution type: in-product evaluator for user-defined contracts against feeder-level capacity needs (replacing an external contract-generator concept).
+- Served as client-facing methodology SME for a major distribution utility on non-wires and flexibility-market evaluation, translating distribution-planning needs into evaluator inputs and risk parameters.
+- Developed hourly load-profile simulators for electric boilers and industrial process heat pumps (COP as a function of temperature lift) for downstream demand and grid-impact modelling.
 
 ### Project Engineer — Environment and Climate Change Canada, Vancouver, BC
 
-**Feb 2023 – May 2025**
+**Feb 2023 – Mar 2025**
 
 - Enhanced the optimization modelling framework for economic and energy assessment of the Clean Electricity Regulations, including hydro development decisions, load decomposition, alternative fuel coverage, and improved spatial representation of variable renewable capacities.
 - Assessed policy and market scenarios on the Canadian power system, with attention to demand-side and cross-sectoral resources (electrification of heating, EV load, DSM) and integration of non-traditional resources.
@@ -40,9 +42,15 @@ Energy systems engineer and modeller based in Vancouver, BC, focused on power-sy
 - Introduced model constraints for cascading storage hydro in optimal dispatch and long-term planning (*Renewable & Sustainable Energy Transition*).
 - Built a neural-network surrogate for expensive simulation runs, reducing evaluation time from 8+ hours to ~30 seconds (~96×) at preserved accuracy (*Energy Reports*).
 
+### Research Analyst — Sharif Energy Research Institute (SERI), Tehran, Iran
+
+**Sep 2014 – Jan 2017**
+
+- Introduced and calibrated a workforce production function within a computable general equilibrium (CGE) optimization model to include emissions health impacts and a carbon-tax commodity, characterizing an economy-wide rebound effect (~18%).
+
 ### Lead Energy Engineer — Baghtakht Architectural Services, Tehran, Iran
 
-**Jan 2010 – Jan 2019**
+**Sep 2011 – Sep 2019**
 
 - Led energy and HVAC design on 20+ commercial and residential developments (~1,500 m² to ~50,000 m²), from concept through construction support and commissioning.
 - Performed heating, cooling, and ventilation load calculations and system sizing per ASHRAE standards and local codes; coordinated multi-disciplinary teams of 3–5 engineers.
