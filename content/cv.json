@@ -122,6 +122,11 @@
   ],
   "playground": [
     {
+      "label": "Spruce KB",
+      "description": "Educational knowledge base on defined-risk options and credit spreads",
+      "url": "https://spruce.smmiri.com/"
+    },
+    {
       "label": "Rent vs buy",
       "description": "Canadian mortgage vs invest sensitivity tool",
       "url": "https://rentorbuy.smmiri.com/"
