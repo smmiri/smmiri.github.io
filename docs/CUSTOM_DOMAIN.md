@@ -42,9 +42,22 @@ Smoke test in a browser: hard refresh, toggle light/dark, open ElectrifiedGrid l
 
 ## Google Search Console
 
-- **Sitemap (apex):** `https://smmiri.com/sitemap.xml` — lists the CV (`smmiri.com`) and calculator (`rentorbuy.smmiri.com`). `robots.txt` on the apex points crawlers to this file.
+- **Sitemap (apex):** `https://smmiri.com/sitemap.xml` — lists the CV (`smmiri.com`) and playground hosts (`spruce`, `rentorbuy`, `swapmycar`, `iee`). `robots.txt` on the apex points crawlers to this file.
 - **Property type:** use a **Domain** property for `smmiri.com` if you want one Search Console setup for the apex and subdomains. Submit the apex sitemap there after deploy.
 - **rentorbuy** also ships its own `https://rentorbuy.smmiri.com/sitemap.xml` (optional second submit on a URL-prefix property, or rely on the apex sitemap only).
+- **Canonical host:** `https://smmiri.com/`. GitHub Pages 301s `http://`, `www`, and `smmiri.github.io` there. Do not request indexing for those aliases.
+- **CNAME file:** `public/CNAME` publishes `smmiri.com` with the Pages artifact so the custom domain stays attached on every deploy.
+
+### Recovering "Not found (404)" on the homepage
+
+Google's first-wave crawler reads raw HTML and can treat an empty React `#root` as a soft 404 even when the live URL returns HTTP 200. Production builds now prerender the CV into `#root` and add Person/ProfilePage JSON-LD.
+
+After this ships:
+
+1. Confirm `curl -sI https://smmiri.com/` is `200` and the HTML contains the name and Experience section without JavaScript.
+2. In Search Console, open **URL inspection** for `https://smmiri.com/` → **Request indexing**.
+3. Resubmit `https://smmiri.com/sitemap.xml`.
+4. Leave `http://www.smmiri.com/` and `https://www.smmiri.com/` alone — they should move to **Page with redirect** on the next crawl. Only the apex should be indexed.
 
 ## Build (this repo)
 

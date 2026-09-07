@@ -44,6 +44,7 @@ jobs:
           VITE_SITE_URL: https://smmiri.com
         run: |
           npm ci
+          npm test
           npm run build
 
       - name: Verify build output
@@ -52,11 +53,17 @@ jobs:
           test -f dist/.nojekyll
           test -f dist/sitemap.xml
           test -f dist/robots.txt
+          test -f dist/CNAME
+          test -f dist/404.html
           # Single-file build: JS/CSS inlined in index.html (no separate /assets/ to 404)
           HTML_BYTES=$(wc -c < dist/index.html | tr -d ' ')
           echo "index.html size: ${HTML_BYTES} bytes"
           test "$HTML_BYTES" -gt 50000
           grep -q 'id="root"' dist/index.html
+          grep -q 'Mohammad Miri' dist/index.html
+          grep -q 'application/ld+json' dist/index.html
+          grep -qx 'smmiri.com' dist/CNAME
+          node scripts/verify-seo.mjs
           ls -la dist
 
       - name: Configure GitHub Pages
